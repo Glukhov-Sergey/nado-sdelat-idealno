@@ -1,10 +1,7 @@
-.w {border: 1px solid red;}
 
 html {
     height: 100%;
 }
-
-
 
 body {
     height: inherit;
@@ -13,7 +10,6 @@ body {
 
     border-color: transparent;
     padding-top: 1px;
-    overflow: hidden;
 
     z-index: 0;
 }
@@ -58,6 +54,10 @@ h1 {
 
 h1::after {
     content: '*';
+}
+
+.page__heading:hover {
+    color: #4c4c4c;
 }
 
 
