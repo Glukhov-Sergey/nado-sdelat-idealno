@@ -82,6 +82,7 @@ h1::after {
     letter-spacing: 0;
     text-align: left;
     box-shadow: 0 14px 0 #000;
+    line-height: 35px;
 
     top: 182px;
     right: 22px;
