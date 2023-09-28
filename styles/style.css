@@ -5,13 +5,13 @@ html {
 
 body {
     height: inherit;
+    display: flex;
+    justify-content: center;
     position: relative;
     min-width: 800px;
-
+    background-color: #fdafe8;
     border-color: transparent;
     padding-top: 1px;
-
-    z-index: 0;
 }
 
 body::after {
@@ -32,9 +32,9 @@ video {
     inset: 0;
 }
 
-h1 {
+.page__heading {
     color: #000;
-    text-align: center;
+    text-align: center; 
     
     font-size: 116px;
     font-style: normal;
@@ -42,22 +42,20 @@ h1 {
     line-height: normal;
     letter-spacing: 4.06px;
     text-transform: uppercase;
-
-    position: sticky;
-    
-   
-    margin: 60px auto 0;
+  
+    padding-top: 60px;
     max-width: 740px;
 
     z-index: 3;
 }
 
-h1::after {
+.page__heading::after {
     content: '*';
 }
 
 .page__heading:hover {
     color: #4c4c4c;
+    cursor: default;
 }
 
 
@@ -67,11 +65,10 @@ h1::after {
     
 
     color: #000;
-    font-family: Raleway;
     font-size: 35px;
     font-weight: 400;
 
-    position: fixed;
+    position: absolute;
 
     min-width: 745px;
     border: 2px solid black;
@@ -86,4 +83,5 @@ h1::after {
 
     top: 182px;
     right: 22px;
+    z-index: 1;
 } 
